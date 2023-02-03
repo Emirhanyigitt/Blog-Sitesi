@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="assets/img/snaz_black.png">
+<title>Sky Blog</title>
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+<link href="assets/css/skyblog.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="container">
+	<a class="navbar-brand" href="index.html">
+		<img src="assets/img/snaz.png" alt="logo">
+	</a>
+	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+		<ul class="navbar-nav ml-auto" style="margin-top: 20px;">
+			<li  class="nav-item">
+			<a class="nav-link" href="index.html">Anasayfa<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="blog_olustur.html">Blog Yazısı Oluştur</a>
+			</li>
+		</ul>
+		<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="text" placeholder="Ara">
+			<span class="search-icon"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M20.067 18.933l-4.157-4.157a6 6 0 1 0-.884.884l4.157 4.157a.624.624 0 1 0 .884-.884zM6.5 11c0-2.62 2.13-4.75 4.75-4.75S16 8.38 16 11s-2.13 4.75-4.75 4.75S6.5 13.62 6.5 11z"></path></svg></span>
+		</form>
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Giriş Yap</button>
+		<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Kayıt Ol</button>
+		<div id="id02" class="modal2">
+			<span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">&times;</span>
+			<form class="modal-content2" action="index.html">
+			  <div class="container2">
+				<h1>Kayıt Ol</h1>
+				<p>Hesap oluşturmak için lütfen bu formu doldurun.</p>
+				<hr>
+				<label for="email"><b>Email Adresi</b></label>
+				<input type="text" placeholder="Email Adresi Giriniz" name="email" required>
+		  
+				<label for="psw"><b>Şifre</b></label>
+				<input type="password" placeholder="Şifre Giriniz" name="psw" required>
+		  
+				<label for="psw-repeat"><b>Şifreyi Tekrar Gir</b></label>
+				<input type="password" placeholder="Şifre Tekrar" name="psw-repeat" required>
+				
+				<label>
+				  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Beni Hatırla
+				</label>
+		  
+				<p>Bir hesap oluşturarak aşağıdakileri kabul etmiş olursunuz: <a href="#" style="color:dodgerblue">Şartlar & Gizlilik</a>.</p>
+		  
+				<div class="clearfix2">
+				  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Kapat</button>
+				  <button type="submit" class="signupbtn2">Kayıt Ol</button>
+				</div>
+			  </div>
+			</form>
+		  </div>
+		  <script>
+			var modal = document.getElementById('id02');
+			window.onclick = function(event) {
+			  if (event.target == modal) {
+				modal.style.display = "none";
+			  }
+			}
+			</script>
+		<div id="id01" class="modal">
+			<form class="modal-content animate" action="index.html" method="post">
+				<div class="imgcontainer">
+				  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				  <img src="assets/img/demopic/img_avatar2.png" alt="Avatar" class="avatar">
+				</div>
+			
+				<div class="container">
+				  <label for="uname"><b>Kullanıcı Adı</b></label>
+				  <input type="text" placeholder="Kullanıcı Adını Giriniz" name="uname" required>
+			
+				  <label for="psw"><b>Şifre</b></label>
+				  <input type="password" placeholder="Şifrenizi Giriniz" name="psw" required>
+					
+				  <button type="submit">Giriş Yap</button>
+				  <label>
+					<input type="checkbox" checked="checked" name="remember"> Beni Hatırla
+				  </label>
+				</div>
+				<div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Kapat</button>
+					<span class="psw">Şifremi <a href="#">Unuttum?</a></span>
+				</div>
+				</form>
+		</div>
+		<script>
+			var modal = document.getElementById('id01');
+			
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+			</script>
+	</div>
+</div>
+</nav>
+<div class="container">
+	<div class="row">
+
+
+		<div class="col-md-8 col-md-offset-2 col-xs-12">
+			<div class="mainheading">
+
+				<br>
+                <h1 class="posttitle" style="color: lightgray;">Başlık...</h1>
+                <img class="img-fluid img-thumb" src="assets/img/icons8-add-new-96.png" alt="" style="opacity: 50%; height: 48px; width: 48px; color: lightgray;">Hikayeni yaz...<br>
+                <label for="message">Mesajınız:</label><br>
+                <textarea placeholder="Aklınızdan Geçenleri yazın!!" rows="10" name="comment[text]" id="comment_text" cols="40" class="ui-autocomplete-input" autocomplete="off" role="textbox" aria-autocomplete="list" aria-haspopup="true"></textarea>
+                <a href="#" class="btn olustur" style="background-color: white; color: black;">Oluştur</a>
+
+			</div>
+
+			
+			<div class="article-post">
+
+			</div>
+			<div class="after-post-tags">
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="alertbar"  style="background-color: #3C79F5; height: 70px;">
+	<div class="container text-center"  style="color: white;">
+		<img src="assets/img/snaz.png" alt="">&nbsp;Bizden hiçbir <b>blog</b> kaçırmayın, haftalık güncellemeleri gelen kutunuzda görüntüleyin.<a href="#" class="btn subscribe" style="background-color: white; color: black;">Kabul Et</a>
+	</div>
+</div>
+<div class="footer">
+	<p class="pull-left">
+		 Tüm Hakları Saklıdır &copy; 2023 Sky Blog
+	</p>
+	<p class="pull-right">
+		Sky Blog Tasarımı <a target="_blank" href="">Sky Anonim Şirketi</a> Tarafından Yapılmıştır
+	</p>
+	<div class="clearfix">
+	</div>
+</div>
+<script src="assets/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="assets/js/skyblog.js"></script>
+</body>
+</html>
